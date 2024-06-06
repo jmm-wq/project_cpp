@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SpaceFactoryCopy" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SpaceFactoryCopy" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../../projekt_cpp/SFML-2.5.1" />
+					<Add directory="../Src" />
+					<Add directory="../../projekt_cpp/SFML-2.5.1/include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-window" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-system" />
+					<Add directory="../../projekt_cpp/SFML-2.5.1/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SpaceFactoryCopy" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../Assets/Andromeda.png" />
+		<Unit filename="../Assets/Galaxy1.png" />
+		<Unit filename="../Assets/Galaxy2.png" />
+		<Unit filename="../Assets/GalaxyCluster.png" />
+		<Unit filename="../Assets/MilkyWay1.png" />
+		<Unit filename="../Assets/MilkyWay2.png" />
+		<Unit filename="../Assets/Nebula.png" />
+		<Unit filename="../Assets/PurpleSun.png" />
+		<Unit filename="../Assets/SpriteSheet.png" />
+		<Unit filename="../Assets/StarCluster1.png" />
+		<Unit filename="../Assets/StarCluster2.png" />
+		<Unit filename="../Assets/YellowSun.png" />
+		<Unit filename="../Assets/arial.ttf" />
+		<Unit filename="../CMakeLists.txt" />
+		<Unit filename="../CMakeModules/FindSFML.cmake" />
+		<Unit filename="../Src/Game/Base.cpp" />
+		<Unit filename="../Src/Game/Base.h" />
+		<Unit filename="../Src/Game/BaseFactory.cpp" />
+		<Unit filename="../Src/Game/BaseFactory.h" />
+		<Unit filename="../Src/Game/Building.h" />
+		<Unit filename="../Src/Game/Buildings/Buildings" />
+		<Unit filename="../Src/Game/Buildings/Core.cpp" />
+		<Unit filename="../Src/Game/Buildings/Core.h" />
+		<Unit filename="../Src/Game/Buildings/OreSilo.cpp" />
+		<Unit filename="../Src/Game/Buildings/OreSilo.h" />
+		<Unit filename="../Src/Game/Enemy.cpp" />
+		<Unit filename="../Src/Game/Enemy.h" />
+		<Unit filename="../Src/Game/Entity.cpp" />
+		<Unit filename="../Src/Game/Entity.h" />
+		<Unit filename="../Src/Game/Game.cpp" />
+		<Unit filename="../Src/Game/Game.h" />
+		<Unit filename="../Src/Game/Player.cpp" />
+		<Unit filename="../Src/Game/Player.h" />
+		<Unit filename="../Src/Game/Tile.cpp" />
+		<Unit filename="../Src/Game/Tile.h" />
+		<Unit filename="../Src/Game/World.cpp" />
+		<Unit filename="../Src/Game/World.h" />
+		<Unit filename="../Src/Graphic/Animation.cpp" />
+		<Unit filename="../Src/Graphic/Animation.h" />
+		<Unit filename="../Src/Graphic/FloatingCombatText.cpp" />
+		<Unit filename="../Src/Graphic/FloatingCombatText.h" />
+		<Unit filename="../Src/Graphic/Sprite.cpp" />
+		<Unit filename="../Src/Graphic/Sprite.h" />
+		<Unit filename="../Src/Graphic/Texture.cpp" />
+		<Unit filename="../Src/Graphic/Texture.h" />
+		<Unit filename="../Src/Graphic/Ui.cpp" />
+		<Unit filename="../Src/Graphic/Ui.h" />
+		<Unit filename="../Src/Graphic/Uis/EntityStats.cpp" />
+		<Unit filename="../Src/Graphic/Uis/EntityStats.h" />
+		<Unit filename="../Src/Graphic/Uis/PlayerStats.cpp" />
+		<Unit filename="../Src/Graphic/Uis/PlayerStats.h" />
+		<Unit filename="../Src/Tool/Event.h" />
+		<Unit filename="../Src/Tool/PropertyManager.cpp" />
+		<Unit filename="../Src/Tool/PropertyManager.h" />
+		<Unit filename="../Src/Tool/Tool.cpp" />
+		<Unit filename="../Src/Tool/Tool.h" />
+		<Unit filename="../Src/Window/Action.cpp" />
+		<Unit filename="../Src/Window/Action.h" />
+		<Unit filename="../Src/Window/ActionEventArg.h" />
+		<Unit filename="../Src/Window/AnimationManager.cpp" />
+		<Unit filename="../Src/Window/AnimationManager.h" />
+		<Unit filename="../Src/Window/Window.cpp" />
+		<Unit filename="../Src/Window/Window.h" />
+		<Unit filename="../Src/main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
