@@ -1,0 +1,86 @@
+
+
+v5.5 - Koszty budowy
+
+
+v5.4 - Zapisywanie i ładowanie bazy								-styczeń 2022
+
+* Dodano klasę budynku
+* OreSilo dziedziczy teraz budynek
+* Dodano klasę budynku Core
+* Baza jest teraz zbiorem Budynków* (była Bytem*)
+* Dodano klasę BaseFactory
+* Dodano funkcję Split do dzielenia ciągu w Tool.h
+
+v5.3 - Interakcja z bazą
+
+* Dodanie akcji Buduj, (tylko w bazie)
+* Dodanie akcji zdeponowania rudy
+
+c5.2 - Budynki
+
+* Dodanie klasy OreSilo
+* Dodanie metody SetupBase do świata, która doda podstawowe budynki do świata
+* Game::Load wywoła World::SetupBase podczas ładowania bazy
+
+v5.1 - Tryb przygody i baza
+
+* Dodanie akcji skoku, która powoduje, że gracz skacze z trybu bazy do trybu przygody. (Jak w Gwiezdnych Wojnach)
+* Game::Load wywoła World::GenerateEntities tylko podczas ładowania przygody
+
+Przegląd kodu
+
+* Modyfikacja kodu, porządki, namespace, itp.
+
+v4.4 – Floating Text
+
+* Dodanie klasy animacji
+* Dodanie klasy AnimationManager
+* Dodanie klasy FloatingCombatText (animacja)
+* Floating Text, gdy gracz wykopie asteroidę
+
+v4.3 – Nakładka GUI do wyświetlania informacji o graczu
+
+* Dodanie klasy Ui do reprezentowania interfejsów użytkownika
+* Dodanie klasy GameOverlay wyświetlającą informacje o graczu
+
+v4.2 - Tworzenie i wydobywanie asteroid 								-grudzień 2021	
+
+* Dodanie metody GenerateEntities do świata. (Alokacja)
+* Dodanie akcji Mine i metody Mine do Player.cpp
+* Dodano właściwość CurrentOre i MaxOre do Player.cpp
+
+v4.1 - PropertyManager
+
+* Dodanie klasę menedżera właściwości PropertyManager
+* Obiekt dziedziczy teraz z menedżera właściwości PropertyManager
+* Atrybuty Entity i Player zostały przeniesione do menedżera właściwości PropertyManager
+
+v3.2 - Generowanie większego świata
+
+* Dodanie metody UpdateView do okna, aby widok podążał za graczem (gracz w centrum)
+
+v3.1 - Generowanie świata gry
+
+* Świat ma teraz globalne tło zamiast powtarzalnego kafelka (Tile)
+* Konstruktor wywołuje GenerateTiles i GenerateBackground
+* World::CanMove sprawdzanie właściwej pozycji na świecie
+* Texture::TileSize ma stałą globalną w sprite.h o nazwie SpriteSize
+* TextureCollection ładuje wszystkie tekstury
+
+v2.2 - Obracanie Sprite-a gracza podczas ruchu                              				-listopad 2021
+
+* Obracanie Sprite
+* Kończenie tury akcji w ActionEventArg
+
+v2.1 - Świat i gracz
+
+* Dodanie odniesień do okna w klasie gry
+* Dodanie metod CanMove i Move do świata
+* Zmiana sposobu rysowania kafelków
+
+v1.1 - The World											-wrzesień 2021
+
+* Stworzenie okna, w którym będzie przebiegała gra 
+* Dodanie World class i Tile struct
+* Dopasowanie pozycji statku gracza do kafelków

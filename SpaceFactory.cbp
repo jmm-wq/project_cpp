@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SpaceFactory" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SpaceFactory" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../projekt_cpp/SFML-2.5.1" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add directory="../projekt_cpp/SFML-2.5.1/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SpaceFactory" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Assets/Andromeda.jpg" />
+		<Unit filename="Assets/Galaxy1.jpg" />
+		<Unit filename="Assets/Galaxy2.jpg" />
+		<Unit filename="Assets/GalaxyCluster.jpg" />
+		<Unit filename="Assets/MilkyWay1.jpg" />
+		<Unit filename="Assets/MilkyWay2.jpg" />
+		<Unit filename="Assets/Nebula.jpg" />
+		<Unit filename="Assets/PurpleSun.jpg" />
+		<Unit filename="Assets/SpriteSheet.png" />
+		<Unit filename="Assets/StarCluster1.jpg" />
+		<Unit filename="Assets/StarCluster2.jpg" />
+		<Unit filename="Assets/YellowSun.jpg" />
+		<Unit filename="CMakeModules/FindSFML.cmake" />
+		<Unit filename="Src/Game/Entity.cpp" />
+		<Unit filename="Src/Game/Entity.h" />
+		<Unit filename="Src/Game/Game.cpp" />
+		<Unit filename="Src/Game/Game.h" />
+		<Unit filename="Src/Game/Player.cpp" />
+		<Unit filename="Src/Game/Player.h" />
+		<Unit filename="Src/Game/Tile.cpp" />
+		<Unit filename="Src/Game/Tile.h" />
+		<Unit filename="Src/Game/World.cpp" />
+		<Unit filename="Src/Game/World.h" />
+		<Unit filename="Src/Graphic/Sprite.cpp" />
+		<Unit filename="Src/Graphic/Sprite.h" />
+		<Unit filename="Src/Graphic/Texture.cpp" />
+		<Unit filename="Src/Graphic/Texture.h" />
+		<Unit filename="Src/Tool/Event.h" />
+		<Unit filename="Src/Window/Action.cpp" />
+		<Unit filename="Src/Window/Action.h" />
+		<Unit filename="Src/Window/ActionEventArg.h" />
+		<Unit filename="Src/Window/Window.cpp" />
+		<Unit filename="Src/Window/Window.h" />
+		<Unit filename="Src/main.cpp" />
+		<Unit filename="Src/openal32.dll" />
+		<Unit filename="Src/sfml-audio-2.dll" />
+		<Unit filename="Src/sfml-audio-d-2.dll" />
+		<Unit filename="Src/sfml-graphics-2.dll" />
+		<Unit filename="Src/sfml-graphics-d-2.dll" />
+		<Unit filename="Src/sfml-network-2.dll" />
+		<Unit filename="Src/sfml-network-d-2.dll" />
+		<Unit filename="Src/sfml-system-2.dll" />
+		<Unit filename="Src/sfml-system-d-2.dll" />
+		<Unit filename="Src/sfml-window-2.dll" />
+		<Unit filename="Src/sfml-window-d-2.dll" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
