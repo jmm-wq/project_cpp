@@ -1,0 +1,8 @@
+#ifndef SRC_GAME_BUILDINGS_BUILDINGS
+
+#define SRC_GAME_BUILDINGS_BUILDINGS
+
+#include "Game/Buildings/Core.h"
+#include "Game/Buildings/OreSilo.h"
+
+#endif  // SRC_GAME_BUILDINGS_BUILDINGS
